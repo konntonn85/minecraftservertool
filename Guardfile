@@ -13,7 +13,7 @@ guard :shell do
       icon = ':minecraft:'
       token = 'hogehoge.piyopiyo.com'
 
-      cmd = %Q{curl -X POST --data-urlencode 'payload={"channel": \"#{channel}\", "username": \"#{username}\", "text": \"#{message}\", "icon_emoji": \"#{icon}\"}' hogehogepiyopiyo.com}
+      cmd = %Q{curl -X POST --data-urlencode 'payload={"channel": \"#{channel}\", "username": \"#{username}\", "text": \"#{message}\", "icon_emoji": \"#{icon}\"}' #{token}}
       `#{cmd}` unless message.nil?
     end
   }
