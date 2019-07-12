@@ -11,9 +11,9 @@ guard :shell do
       channel = '#minecraft'
       username = 'Minecraft'
       icon = ':minecraft:'
-      token = 'hogehoge.piyopiyo.com'
+      url = 'hogehoge.piyopiyo.com'
 
-      cmd = %Q{curl -X POST --data-urlencode 'payload={"channel": \"#{channel}\", "username": \"#{username}\", "text": \"#{message}\", "icon_emoji": \"#{icon}\"}' #{token}}
+      cmd = %Q{curl -X POST --data-urlencode 'payload={"channel": \"#{channel}\", "username": \"#{username}\", "text": \"#{message}\", "icon_emoji": \"#{icon}\"}' #{url}}
       `#{cmd}` unless message.nil?
     end
   }
