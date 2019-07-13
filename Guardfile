@@ -7,7 +7,7 @@ guard :shell do
     if ll.include?('joined') || ll.include?('left')
       message = ':white_check_mark: ' + ll.gsub(/(\r\n|\r|\n|\f)/,"") if ll.include?('joined')
       message = ':arrow_right: ' + ll.gsub(/(\r\n|\r|\n|\f)/,"") if ll.include?('left')
-      message = "[マイクラ鯖の通知だよ！] #{message}"
+      message = "[it is announcement from minecraft server] #{message}"
       channel = '#minecraft'
       username = 'Minecraft'
       icon = ':minecraft:'
