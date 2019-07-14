@@ -19,9 +19,9 @@ URL='hogehoge.piyopiyo.com'
 # channel to export
 CHANNEL=${CHANNEL:-'minecraft'}
 # name of bot
-BOTNAME=${BOTNAME:-'okutani-bot'}
+BOTNAME=${BOTNAME:-'mcserver'}
 # emoji
-EMOJI=${EMOJI:-':sushi:'}
+EMOJI=${EMOJI:-':hoge:'}
 # head tittle
 HEAD=${HEAD:-"[server message]\n"}
 
